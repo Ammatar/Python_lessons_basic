@@ -33,3 +33,18 @@ print('Stalo:', 'A -',ax,'B -', bx)
 # Для вычисления квадратного корня воспользуйтесь функцией sqrt() модуля math:
 # import math
 # math.sqrt(4) - вычисляет корень числа 4
+import math
+az = int(input('Vvedite koef A'))
+bz = int(input('Vvedite koef B'))
+cz = int(input('Vvedite koef C'))
+D = bz**2 - 4*az*cz
+print('Discriminant', D)
+if D > 0:
+	xz = (-bz + math.sqrt(D))/ 2*az
+	xy = (-bz - math.sqrt(D))/ 2*az
+	print('', xz, 'i', xy)
+elif D == 0:
+	xz = -(bz/2*az)
+  print('', xz)
+else:
+  print('korney net')
