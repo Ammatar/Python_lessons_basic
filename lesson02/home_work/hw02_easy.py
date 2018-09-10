@@ -13,6 +13,15 @@
 
 # Подсказка: воспользоваться методом .format()
 
+fruits = ["apple", "Banana", "kiwi", "arbuz"]
+a = 0
+b = len(fruits)
+while a < b:
+  a1 = a + 1
+  print(a1, '{:>10}'.format(fruits[a]))
+  a += 1
+
+
 
 # Задача-2:
 # Даны два произвольные списка.
