@@ -16,6 +16,17 @@
 # Подсказка:
 # для получения случайного числа используйте функцию randint() модуля random
 
+import random
+
+how_much = int(input())
+start = 0
+middle = 0
+list_result = []
+while start < how_much:
+    middle = random.randint(-100,100)
+    list_result.append(middle)
+    start += 1
+print(list_result)
 
 # Задача-4: Дан список, заполненный произвольными целыми числами.
 # Получите новый список, элементами которого будут: 
