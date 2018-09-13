@@ -3,7 +3,12 @@
 # Первыми элементами ряда считать цифры 1 1
 
 def fibonacci(n, m):
-    pass
+    a = 0
+    fibo = [1, 1]
+    while a< m:
+        fibo.append(fibo[0+a]+fibo[1+a])
+        a+=1
+    return fibo[n:m]
 
 # Задача-2:
 # Напишите функцию, сортирующую принимаемый список по возрастанию.
@@ -12,7 +17,15 @@ def fibonacci(n, m):
 
 
 def sort_to_max(origin_list):
-    pass
+    a = origin_list
+    for i in range(len(a),0,-1):
+        for n in range(1,i):
+            if a[n-1] > a[n]:
+                an = a[n-1]
+                a[n-1] = a[n]
+                a[n] = an
+    return a
+
 
 sort_to_max([2, 10, -12, 2.5, 20, -11, 4, 4, 0])
 
@@ -20,6 +33,14 @@ sort_to_max([2, 10, -12, 2.5, 20, -11, 4, 4, 0])
 # Напишите собственную реализацию стандартной функции filter.
 # Разумеется, внутри нельзя использовать саму функцию filter.
 
+def myFilter(listed, x):
+    listed_res = []
+    for i in listed:
+        if i == x:
+            listed_res.append(i)
+        else:
+            pass
+    return listed_res
 
 # Задача-4:
 # Даны четыре точки А1(х1, у1), А2(x2 ,у2), А3(x3 , у3), А4(х4, у4).
