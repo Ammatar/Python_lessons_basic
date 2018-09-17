@@ -15,6 +15,11 @@ result_list = [i**2 for i in start_list]
 # Даны два списка фруктов.
 # Получить список фруктов, присутствующих в обоих исходных списках.
 
+first_list = ['orange','apple', 'ananas', 'pears', 'banana']
+second_list = ['orange', 'banana','apple', 'ananas']
+result_list = [i for i in first_list and second_list]
+print(result_list)
+
 # Задание-3:
 # Дан список, заполненный произвольными числами.
 # Получить список из элементов исходного, удовлетворяющих следующим условиям:
