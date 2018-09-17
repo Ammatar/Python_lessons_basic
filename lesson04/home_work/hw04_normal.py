@@ -19,7 +19,11 @@ line = 'mtMmEZUOmcqWiryMQhhTxqKdSTKCYEJlEZCsGAMkgAYEOmHBSQsSUHKvSfbmxULaysmNO'\
        'qHFjvihuNGEEFsfnMXTfptvIOlhKhyYwxLnqOsBdGvnuyEZIheApQGOXWeXoLWiDQNJFa'\
        'XiUWgsKQrDOeZoNlZNRvHnLgCmysUeKnVJXPFIzvdDyleXylnKBfLCjLHntltignbQoiQ'\
        'zTYwZAiRwycdlHfyHNGmkNqSwXUrxGc'
-
+import re
+split_line = re.split(r'[A-Z]', line)
+final_line = list(filter(None, split_line))
+#print(split_line)
+print(final_line)
 
 # Задание-2:
 # Вывести символы в верхнем регистре, слева от которых находятся
